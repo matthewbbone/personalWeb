@@ -65,7 +65,7 @@ const AboutMe = () => {
         <div className={styles.homePage} style={{ backgroundImage: `url(${width > 600 ? AboutMeImage : AboutMeImageMobile})` }}>
 
             <NavBar active={currentStepIndex == 0}
-                progress={stepProgress} />
+                progress={stepProgress} width={width} />
 
             <Scrollama onStepEnter={onStepEnter} progress onStepProgress={onStepProgress} offset={1}>
 
