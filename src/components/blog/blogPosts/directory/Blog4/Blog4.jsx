@@ -10,7 +10,7 @@ class Blog4 extends Component {
         console.log(isMobile)
 
         return (
-            <div>
+            <div  className={blogStyles.blogBackground}>
                 <h1>Philosopher Network Visualization</h1>
                 <div className={blogStyles.centerDisplay}>“The safest general characterization of the European philosophical tradition is that it consists of a series of footnotes to Plato”<br /> Alfred N. Whitehead</div>
                 <div className={blogStyles.dynamicShuffle}>

@@ -5,7 +5,7 @@ import blogStyles from '../../../Blog.module.css'
 class Blog5 extends Component {
     render() {
         return (
-            <div>
+            <div  className={blogStyles.blogBackground}>
                 <h1>Community Detection with the PhilosopherNet</h1>
                 <img src={DetectPic} className={blogStyles.titlePic} />
                 <p>

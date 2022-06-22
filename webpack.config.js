@@ -1,5 +1,4 @@
 const path = require('path');
-const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -15,6 +14,10 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /\.svg$/,
+                loader: 'svg-inline-loader'
+            },
             {
                 test: /\.html$/i,
                 loader: "html-loader",
@@ -54,7 +57,7 @@ module.exports = {
         ],
     },
     devServer: {
-        historyApiFallback: true,
+        historyApiFallback: true
     },
     plugins: [
         new HtmlWebpackPlugin({

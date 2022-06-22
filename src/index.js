@@ -1,23 +1,17 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
-import Home from './components/home/Home';
-import Blog from './components/blog/Blog'
-import NavBar from './components/navbar/NavBar'
-import Footer from './components/footer/Footer'
+import { HashRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
+import AboutMe from './components/AboutMe/AboutMe';
 import ReactDOM from 'react-dom';
 import styles from "./index.module.css"
+import Blog from './components/Blog/Blog';
 
 class App extends Component {
 
   render() {
     return (
       <Router>
-        <NavBar />
-        <div className={styles.pageView}>
-          <Home/>
-          <Blog/>
-        </div>
-        <Footer />
+          <Route exact path="/" component={AboutMe} />
+          <Route path="/blog" component={Blog} />
       </Router>
     )
   }

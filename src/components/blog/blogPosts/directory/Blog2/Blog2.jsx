@@ -5,7 +5,7 @@ import blogStyles from '../../../Blog.module.css'
 class Blog2 extends Component {
     render() {
         return (
-            <div>
+            <div  className={blogStyles.blogBackground}>
                 <h1>Numbers don't lie...</h1>
                 <img src={Police} className={blogStyles.titlePic} />
                 <p>

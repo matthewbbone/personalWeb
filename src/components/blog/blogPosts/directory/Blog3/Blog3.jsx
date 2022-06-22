@@ -9,7 +9,7 @@ import TSPGrid from './assets/TSPgrid.png'
 class Blog3 extends Component {
     render() {
         return (
-            <div>
+            <div  className={blogStyles.blogBackground}>
                 <h1>SFI's Introduction to Complexity</h1>
                 <p>
                     This summer I took the Santa Fe Institute’s Introduction to Complexity Course where I learned about the field of complexity science and the core ideas that drive it. These ideas included fractal geometry, genetic algorithms, cellular automata, networks, and scaling. I found genetic algorithms to be particularly interesting so, in addition to the normal coursework, I developed three implementations of genetic algorithms to solve three types of problems: the traveling salesman problem, finding an “interesting” elementary cellular automata, and a COVID-themed El Farol problem. All of the code for these implementation have been heavily annotated and should be relatively easy to understand.

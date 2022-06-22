@@ -3,12 +3,22 @@ h1 {
     text-align: center;
 }
 
-a {
+p > a {
     color: white
 }
 
-a:visited {
+p > a:visited {
     color: white
+}
+
+.background {
+    min-height: 100vh;
+}
+
+.blogBackground {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 10px 50px 10px;
+    margin-bottom: 50px 
 }
 
 .titlePic {
@@ -96,6 +106,10 @@ a:visited {
     transition: .3s ease-in-out
 }
 
+.blogTitle {
+    margin: 80px auto auto auto
+}
+
 .blogListBox {
     display: flex;
     width: 100%;
@@ -116,6 +130,15 @@ a:visited {
 
 .dynamicShuffle {
     display: inline-flex;
+}
+
+.blogContainer {
+    max-width: 1000px;
+    width: 100%;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px
 }
 
 @media screen and (max-width: 600px) {
@@ -154,4 +177,6 @@ a:visited {
     }
     
 }
+
+
 

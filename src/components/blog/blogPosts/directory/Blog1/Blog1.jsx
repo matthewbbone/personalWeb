@@ -5,7 +5,7 @@ import blogStyles from '../../../Blog.module.css'
 class Blog1 extends Component {
     render() {
         return (
-            <div>
+            <div  className={blogStyles.blogBackground}>
                 <h1>Language Competition:<br />An Abrams-Strogatz inspired agent-based model</h1>
                 <img src={Lang} className={blogStyles.titlePic} />
                 <p className={blogStyles.italic}>

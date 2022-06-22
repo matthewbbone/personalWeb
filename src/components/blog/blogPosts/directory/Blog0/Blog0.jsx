@@ -4,7 +4,7 @@ import blogStyles from '../../../Blog.module.css'
 class Blog0 extends Component {
     render() {
         return (
-            <div>
+            <div className={blogStyles.blogBackground}>
                 <h1>State Mobility and Covid Cases</h1>
                 <p>
                     This data visualization allows you to explore the mobility data published by <a href="https://www.google.com/covid19/mobility/">Google</a> and the COVID-19 case data from <a href="https://github.com/nytimes/covid-19-data">New York Times</a> at the state-level.
