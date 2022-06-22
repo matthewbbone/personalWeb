@@ -3,7 +3,7 @@ import { HashRouter as Router, Route, Redirect, Switch } from 'react-router-dom'
 import AboutMe from './components/AboutMe/AboutMe';
 import ReactDOM from 'react-dom';
 import styles from "./index.module.css"
-import Blog from './components/Blog/Blog';
+import Blog from './components/blog/Blog';
 
 class App extends Component {
 

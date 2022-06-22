@@ -5,7 +5,7 @@ import BlogsData from './blogPosts/BlogsData'
 import styles from './Blog.module.css'
 import LeftArrow from '../../assets/icons/leftarrow.jpg'
 import RightArrow from '../../assets/icons/rightarrow.jpg'
-import NavBar from '../NavBar/NavBar';
+import NavBar from '../navbar/NavBar';
 import AboutMeImage from '../../assets/photos/image0.jpg'
 
 const BlogThumbnail = (blog, index) => {
