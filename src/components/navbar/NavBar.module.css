@@ -4,6 +4,7 @@ header {
     height: 80px;
     position: fixed;
     color: black;
+    z-index: 10;
 }
 
 .name {
@@ -20,17 +21,17 @@ header > a {
 }
 
 .link {
-    font-size: 18px;
     display: inline;
     margin: 10px;
     text-decoration: none;
     color: black;
-    z-index: 10;
 }
 
 @media screen and (max-width: 600px) {
 
-    .name, .headerButtons, .navButton {
+    .link {
+        font-size: 16px;
         margin: 5px
     }
+
 }

@@ -1,5 +1,5 @@
-import React, { Component, useRef } from 'react';
-import { Link, Redirect, Route } from 'react-router-dom';
+import React, { useRef, useState } from 'react';
+import { Link, Route } from 'react-router-dom';
 import BlogPost from './blogPosts/BlogPost';
 import BlogsData from './blogPosts/BlogsData'
 import styles from './Blog.module.css'
@@ -7,6 +7,7 @@ import LeftArrow from '../../assets/icons/leftarrow.jpg'
 import RightArrow from '../../assets/icons/rightarrow.jpg'
 import NavBar from '../navbar/NavBar';
 import AboutMeImage from '../../assets/photos/image0.jpg'
+import AboutMeImageMobile from '../../assets/photos/image0_mobile.jpg'
 
 const BlogThumbnail = (blog, index) => {
 
@@ -78,8 +79,9 @@ const BlogList = () => {
 }
 
 const Blog = () => {
+    const [width, setWidth] = useState(window.innerWidth)
     return (
-        <div className={styles.background} style={{backgroundImage: `url(${AboutMeImage})`}}>
+        <div className={styles.background} style={{backgroundImage: `url(${width > 600 ? AboutMeImage : AboutMeImageMobile})`}}>
             <NavBar />
             <div className={styles.blogContainer}>
                 <BlogList />

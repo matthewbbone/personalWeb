@@ -3,6 +3,7 @@ import Profile from '../../assets/photos/profile.jpg'
 import styles from './AboutMe.module.css'
 import { useState } from 'react'
 import AboutMeImage from '../../assets/photos/image0.jpg'
+import AboutMeImageMobile from '../../assets/photos/image0_mobile.jpg'
 import NavBar from '../navbar/NavBar'
 import { Scrollama, Step } from 'react-scrollama'
 import LinkedIn from '../../assets/icons/linkedin.png'
@@ -47,6 +48,7 @@ const AboutMe = () => {
 
     const [currentStepIndex, setCurrentStepIndex] = useState(null);
     const [stepProgress, setStepProgress] = useState(null);
+    const [width, setWidth] = useState(window.innerWidth)
 
     // This callback fires when a Step hits the offset threshold. It receives the
     // data prop of the step, which in this demo stores the index of the step.
@@ -60,7 +62,7 @@ const AboutMe = () => {
     }
 
     return (
-        <div className={styles.homePage} style={{ backgroundImage: `url(${AboutMeImage})` }}>
+        <div className={styles.homePage} style={{ backgroundImage: `url(${width > 600 ? AboutMeImage : AboutMeImageMobile})` }}>
 
             <NavBar active={currentStepIndex == 0}
                 progress={stepProgress} />
@@ -69,7 +71,7 @@ const AboutMe = () => {
 
                 {
                     [
-                        <Step data={0} key={0} className={styles.Step}>
+                        <Step data={0} key={0}>
                             <div>
                                 <Section
                                     active={currentStepIndex == 0}

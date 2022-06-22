@@ -45,3 +45,35 @@
 .social {
     margin: 10px;
 }
+
+
+@media screen and (max-width: 600px) {
+
+    .homePage {
+        background-size:cover;
+        height: 100%
+    }
+
+    .container {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        max-height: auto;
+        position: relative;
+        pointer-events: none;
+    }
+
+    .bottomContainer {
+        bottom: auto;
+        top: 10%;
+        display: block;
+        position: absolute;
+    }
+
+    .profile {
+        text-align: center;
+        height: auto;
+        width: 90%;
+        margin: 5%;
+    }
+
+}
