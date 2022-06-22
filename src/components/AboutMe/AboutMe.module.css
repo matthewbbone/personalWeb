@@ -31,11 +31,6 @@
     z-index: 5;
 }
 
-
-.Step {
-    margin: 20px
-}
-
 .homePage {
     background-size: contain;
     transition: background-image 1s ease-in-out;
@@ -44,6 +39,7 @@
 .socialLinks {
     text-align: center;
     margin-top: 10%;
+    pointer-events: all;
 }
 
 .social {
