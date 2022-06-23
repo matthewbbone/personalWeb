@@ -67,6 +67,7 @@
         top: 10%;
         display: block;
         position: absolute;
+        width: 100%;
     }
 
     .profile {

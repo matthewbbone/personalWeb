@@ -10,7 +10,7 @@ const NavBar = ({ active = false, progress = 0, width = 1200}) => {
         style={{
           left: `${active & progress > 0 ? 20 - 18 * progress : 2}%`,
           top: `${active & progress > 0? 300 - 300 * progress : 0}%`,
-          fontSize: active & progress > 0 ? 80 - 50 * progress : titleSize
+          fontSize: active & progress > 0 ? 50 + titleSize - 50 * progress : titleSize
         }}>Matthew B. Bone</span>
       <div className={styles.headerButtons}>
         <Link to={"/"} className={styles.link}>
