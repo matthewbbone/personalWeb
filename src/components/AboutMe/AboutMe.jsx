@@ -1,11 +1,9 @@
 import React from 'react'
 import Profile from '../../assets/photos/profile.jpg'
 import styles from './AboutMe.module.css'
-import { useState } from 'react'
+import { useState, useRef, useEffect} from 'react'
 import AboutMeImage from '../../assets/photos/image0.jpg'
-import AboutMeImageMobile from '../../assets/photos/image0_mobile.jpg'
 import NavBar from '../navbar/NavBar'
-import { Scrollama, Step } from 'react-scrollama'
 import LinkedIn from '../../assets/icons/linkedin.png'
 import Github from '../../assets/icons/github.png'
 
@@ -46,42 +44,31 @@ const Section = ({ active, progress }) => {
 
 const AboutMe = () => {
 
-    const [currentStepIndex, setCurrentStepIndex] = useState(null);
-    const [stepProgress, setStepProgress] = useState(null);
     const [width, setWidth] = useState(window.innerWidth)
+    const [pos, setPos] = useState(0)
 
-    // This callback fires when a Step hits the offset threshold. It receives the
-    // data prop of the step, which in this demo stores the index of the step.
-    const onStepEnter = ({ data }) => {
-        setCurrentStepIndex(data);
-    };
-
-    const onStepProgress = ({ progress }) => {
-        console.log('executing')
-        setStepProgress(progress)
+    document.body.onscroll = () => {
+        if (document.body.scrollHeight == window.innerHeight) {
+            setPos(0)
+        } else {
+            setPos(window.scrollY / (document.body.scrollHeight - window.innerHeight))
+        }
+        setPos(window.scrollY / (document.body.scrollHeight - window.innerHeight))
+        //setPos((window.scrollY + window.innerHeight )/ document.body.scrollHeight)
     }
 
     return (
         <div className={styles.homePage} style={{ backgroundImage: `url(${AboutMeImage})` }}>
 
-            <NavBar active={currentStepIndex == 0}
-                progress={stepProgress} width={width} />
+            <NavBar active={true}
+                progress={pos} width={width} />
 
-            <Scrollama onStepEnter={onStepEnter} progress onStepProgress={onStepProgress} offset={1}>
+            <div>
+                <Section
+                    active={true}
+                    progress={pos}></Section>
+            </div>
 
-                {
-                    [
-                        <Step data={0} key={0}>
-                            <div>
-                                <Section
-                                    active={currentStepIndex == 0}
-                                    progress={stepProgress}></Section>
-                            </div>
-                        </Step>
-                    ]
-                }
-
-            </Scrollama>
         </div>
     );
 };

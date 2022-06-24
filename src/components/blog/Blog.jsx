@@ -82,7 +82,7 @@ const Blog = () => {
     const [width, setWidth] = useState(window.innerWidth)
     return (
         <div className={styles.background} style={{backgroundImage: `url(${width > 600 ? AboutMeImage : null})`}}>
-            <NavBar width={width}/>
+            <NavBar active={false} width={width}/>
             <div className={styles.blogContainer}>
                 <BlogList />
                 <Route path="/blog/:id" component={BlogPost} />
