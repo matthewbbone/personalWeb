@@ -81,7 +81,7 @@ const BlogList = () => {
 const Blog = () => {
     const [width, setWidth] = useState(window.innerWidth)
     return (
-        <div className={styles.background} style={{backgroundImage: `url(${width > 600 ? AboutMeImage : AboutMeImageMobile})`}}>
+        <div className={styles.background} style={{backgroundImage: `url(${width > 600 ? AboutMeImage : null})`}}>
             <NavBar width={width}/>
             <div className={styles.blogContainer}>
                 <BlogList />

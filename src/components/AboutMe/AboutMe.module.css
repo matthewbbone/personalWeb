@@ -55,10 +55,9 @@
     }
 
     .container {
-        margin-top: 10%;
-        margin-bottom: 10%;
+        top: 100%;
         max-height: auto;
-        position: relative;
+        position: absolute;
         pointer-events: none;
     }
 

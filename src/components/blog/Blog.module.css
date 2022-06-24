@@ -175,6 +175,11 @@ p > a:visited {
     .dynamicShuffle {
         display: block;
     }
+
+    .blogContainer {
+        position: absolute;
+        top: 0%
+    }
     
 }
 

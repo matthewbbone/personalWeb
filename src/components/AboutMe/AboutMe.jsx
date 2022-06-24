@@ -62,7 +62,7 @@ const AboutMe = () => {
     }
 
     return (
-        <div className={styles.homePage} style={{ backgroundImage: `url(${width > 600 ? AboutMeImage : AboutMeImageMobile})` }}>
+        <div className={styles.homePage} style={{ backgroundImage: `url(${AboutMeImage})` }}>
 
             <NavBar active={currentStepIndex == 0}
                 progress={stepProgress} width={width} />
