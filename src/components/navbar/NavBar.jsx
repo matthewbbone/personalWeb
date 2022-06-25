@@ -7,7 +7,7 @@ const NavBar = ({ active = false, progress = 0, width = 1200}) => {
   const titleSize = web ? 30 : 22
   const topMargin = web ? 0 : 7
   return (
-    <header style={{ backgroundImage: `linear-gradient(rgba(255, 255, 255, ${active ? progress : 1}), rgba(0, 0, 0, 0))` }}>
+    <header style={{ backgroundImage: `linear-gradient(rgba(255, 255, 255, ${active & web ? progress : 1}), rgba(0, 0, 0, 0))` }}>
       <span className={styles.name}
         style={{
           left: `${active & progress >= 0  & web ? 16 - 14 * progress : 2}%`,
