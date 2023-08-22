@@ -1,0 +1,140 @@
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+    color: var(--ivory);
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+}
+
+.tileLink {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.tile {
+    cursor: pointer;
+    background-color: var(--ivory);
+    box-shadow: var(--light-box-shadow);
+    min-width: 300px;
+    margin-right: 15px;
+    word-wrap: normal;
+}
+
+.tile:hover {
+    box-shadow: var(--heavy-box-shadow);
+    border: 1px solid var(--maroon);
+    transition: .3s ease-in-out
+}
+
+.thumbnail {
+    padding: 5px;
+    width: 450px;
+    height: 300px
+}
+
+.thumbnailDate {
+    color: var(--ivory);
+    font-size: 40px;
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0
+}
+
+.tile:hover  > .thumbnailBox > .thumbnailDate {
+    opacity: 1;
+    transition: .3s ease-in-out;
+}
+
+.tile:hover > .thumbnailBox > .thumbnail {
+    filter: brightness(20%);
+    transition: .3s ease-in-out
+}
+
+.tileBody {
+    padding: 5px;
+}
+
+.tileText {
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.rowContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rowScroll {
+    display: flex;
+    overflow-x: scroll;
+    padding: 15px;
+    width: 90%;
+    margin: auto;
+}
+
+.rowName {
+    font-size: 50px;
+    color: var(--gray);
+    margin-left: 15px;
+}
+
+.row {
+    display: flex;
+    overflow-x: scroll;
+    padding: 15px;
+}
+
+.arrow {
+    margin: auto;
+    padding: 0px 10px 10px 10px;
+    cursor: pointer;
+}
+
+.featured {
+    height: 700px;
+    box-shadow: var(--heavy-box-shadow);
+    margin-bottom: 20px;
+    position: relative
+}
+
+.featuredBanner {
+    left: 0px;
+    top: 30px;
+    padding: 10px;
+    position: absolute;
+    z-index: 10;
+    background-color: var(--translucent-gray);
+    color: var(--ivory);
+}
+
+.featuredImage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
+.highlight {
+    color: var(--maroon)
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px
+}

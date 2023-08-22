@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
@@ -10,7 +10,7 @@ module.exports = {
         publicPath: ''
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.tsx', '.ts', '.js', '.jsx']
     },
     module: {
         rules: [
@@ -34,7 +34,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                exclude: /node_modules/,
+                //exclude: /node_modules/,
                 use: [
                     { loader: 'style-loader' },
                     {
@@ -53,6 +53,11 @@ module.exports = {
                 options: {
                     name: 'img/[name].[ext]'
                 }
+            },
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
             }
         ],
     },
