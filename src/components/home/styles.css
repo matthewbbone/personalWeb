@@ -3,7 +3,7 @@ h1 {
 }
 
 h2 {
-    font-size: 350px;
+    font-size: 35px;
     color: var(--ivory);
 }
 
@@ -46,7 +46,7 @@ h2 {
 
 .thumbnailDate {
     color: var(--ivory);
-    font-size: 40px;
+    font-size: 35px;
     position: absolute;
     text-align: center;
     top: 45%;
@@ -89,7 +89,7 @@ h2 {
 }
 
 .rowName {
-    font-size: 40px;
+    font-size: 35px;
     color: var(--gray);
     margin-left: 15px;
 }
