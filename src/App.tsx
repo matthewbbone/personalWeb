@@ -7,7 +7,7 @@ export const App = () => {
         <div className={styles.App}>
             <header className={styles.appHeader}>
                 <div className={styles.textContainer}>
-                    <h1>Matthew Bone</h1>
+                    <h1>Matthew B. Bone</h1>
                     <img src={profile} className={styles.profile} />
                     <p>Hey! Welcome to my website. I’m a social data scientist exploring how people interact to form complex social systems—and how we can fix them when they break down. Currently, I’m a Grand Union DTP Scholar at the Oxford Internet Institute, where I research how technology impacts the labor market.</p>
                     <p className={styles.optional}>My work focuses on using online labor data to understand the labor market at the skill or task level. For example, what tasks will disappear due to Generative AI? Which skills will it replace? To answer these questions, I use methods from complex systems, like network analysis, agent-based models, and dynamic systems. I’m also working on ways to calibrate economic models to better predict future trends.</p>
