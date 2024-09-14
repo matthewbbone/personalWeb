@@ -1,0 +1,28 @@
+
+.formContainer {
+    width: 50%;
+    margin: 30px auto 30px auto;
+    min-width: 700px;
+    max-width: 1200px
+}
+
+
+
+.formGroup {
+    margin: 10px;
+}
+
+.formLabel {
+    font-size: 22px;
+    color: var(--gray);
+}
+
+.formText {
+    font-size: 14px;
+    color: var(--maroon);
+}
+
+.check {
+    font-size: 18px;
+    color: var(--gray)
+}

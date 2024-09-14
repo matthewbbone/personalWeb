@@ -1,0 +1,63 @@
+
+.App-header {
+  background-color: transparent;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+
+.network {
+  background-color: rgba(43, 43, 43, 0.539);
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+
+.Text-Container {
+  background-color: rgba(43, 43, 43, 0.8); 
+  box-shadow: 0px 0px 50px 50px rgba(43, 43, 43, .8);
+  width: 50%;
+  text-align: justify;
+  font-size:large
+}
+
+.Profile {
+  float: left; 
+  margin-right: 10px; 
+  margin-bottom: 10px; 
+  margin-top: 10px; 
+  width: 15vw; 
+  object-fit: cover;
+}
+
+.Links-Box {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin-top: 10px; 
+  margin-bottom: 10px;
+}
+
+.Link {
+  margin-left: 10px; 
+  margin-right: 10px; 
+  color: white; 
+  text-decoration: none; 
+  font-size: large;
+}
+
+.Link:hover {
+  color: #be0c0c;
+}
+
+
+

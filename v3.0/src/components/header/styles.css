@@ -1,0 +1,59 @@
+
+.navbar {
+    height: 60px;
+    box-shadow: var(--heavy-box-shadow);
+    padding: 0px;
+    background-color: var(--ivory);
+}
+
+.ivory {
+    color: var(--gray);
+}
+
+.tab {
+    color: var(--maroon);
+}
+
+.brand {
+    text-decoration: none;
+    font-size: 30px;
+    margin: auto 20px auto 20px;
+}
+
+.toggle, .toggle:focus {
+    background-color: var(--ivory);
+    border: 0px solid var(--gray);
+    box-shadow: var(--light-box-shadow)
+}
+
+.toggle:hover {
+    box-shadow: var(--heavy-box-shadow);
+    border: 1px solid var(--maroon);
+}
+
+.menu {
+    background-color: var(--gray);
+    color: var(--ivory);
+}
+
+.title {
+    background-color: var(--maroon);
+    box-shadow: var(--heavy-box-shadow);
+}
+
+.option {
+    margin: 5px;
+    padding: 5px;
+    background-color: var(--ivory);
+    box-shadow: var(--light-box-shadow);
+    border: 1px solid var(--ivory);
+    color: var(--gray);
+    text-align: center;
+    text-decoration: none;
+}
+
+.option:hover {
+    box-shadow: var(--heavy-box-shadow);
+    border: 1px solid var(--maroon);
+    color: var(--gray);
+}
