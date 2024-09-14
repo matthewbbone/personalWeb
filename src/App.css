@@ -43,7 +43,7 @@
 
   .textContainer {
     width: 95vw;
-    font-size: medium;
+    font-size: small;
     align-items: center;
     margin: 10px 10px 10px 10px;
     height: 200vh;
@@ -51,7 +51,7 @@
 
   .profile {
     display: flex;
-    width: 50vw;
+    width: 20vh;
     float: none;
     margin-left: auto;
     margin-right: auto;
