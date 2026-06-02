@@ -27,6 +27,10 @@ export default function Network({className}) {
             }
         };
 
+        p.windowResized = () => {
+            p.resizeCanvas(p.windowWidth, p.windowHeight);
+        };
+
         p.draw = () => {
             p.background(43,43,43);
             particles.forEach((particle, index) => {
