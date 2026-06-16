@@ -127,6 +127,7 @@ export const App = () => {
                                 <p className={styles.profileLabel}>Affiliations</p>
                                 <p>Oxford Internet Institute</p>
                                 <p>Institute for New Economic Thinking</p>
+                                <p>Burning Glass Institute</p>
                             </div>
                             <div className={styles.profileGroup}>
                                 <p className={styles.profileLabel}>Funding</p>
