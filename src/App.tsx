@@ -1,6 +1,6 @@
 import styles from './App.css';
 import Network from './components/Network.js';
-import profile from './assets/profile.png';
+import profile from './assets/profile.jpg';
 
 const socialLinks = [
     {
@@ -107,7 +107,7 @@ export const App = () => {
                         <p className={styles.eyebrow}>Social data scientist at the Oxford Internet Institute</p>
                         <h1>Technology, Work, and Complex Social Dynamics</h1>
                         <p className={styles.lede}>
-                            I’m a Grand Union DTP Scholar researching how technology affects the world of work and the role it plays in shaping social outcomes.
+                            I'm a 2nd year DPhil student interested in how to make an equitable transition to a future of work shaped by AI and other emerging technologies. Please reach out if you're interested in technology, labor power, and equitable policy design.
                         </p>
                         <div className={styles.ctaRow}>
                             <a href="https://matthewbbone.substack.com/" target="_blank" rel="noreferrer">
