@@ -414,6 +414,23 @@
   font-size: 0.82rem;
 }
 
+.footerContact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footerContact a {
+  color: rgba(251, 243, 228, 0.78);
+  text-decoration: none;
+}
+
+.footerContact a:hover,
+.footerContact a:focus-visible {
+  color: #be0c0c;
+}
+
 .socialLinks {
   display: flex;
   align-items: center;
@@ -448,6 +465,7 @@
 }
 
 .ctaRow a,
+.footerContact a,
 .socialLink,
 .navLinks a {
   transition: border-color 160ms ease, background 160ms ease, color 160ms ease, transform 160ms ease;
@@ -541,5 +559,11 @@
     align-items: flex-start;
     flex-direction: column;
     padding-bottom: 32px;
+  }
+
+  .footerContact {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
   }
 }

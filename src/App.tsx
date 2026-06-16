@@ -190,7 +190,10 @@ export const App = () => {
                 </section>
 
                 <footer className={styles.siteFooter} id="connect">
-                    <span>Matthew B. Bone</span>
+                    <div className={styles.footerContact}>
+                        <span>Matthew B. Bone</span>
+                        <a href="mailto:matthew.bone@oii.ox.ac.uk">matthew.bone@oii.ox.ac.uk</a>
+                    </div>
                     <div className={styles.socialLinks} aria-label="Social links">
                         {socialLinks.map((link) => (
                             <a
