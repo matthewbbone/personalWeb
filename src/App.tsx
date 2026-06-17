@@ -107,7 +107,7 @@ export const App = () => {
                         <p className={styles.eyebrow}>Social data scientist at the Oxford Internet Institute</p>
                         <h1>Technology, Work, and Complex Social Dynamics</h1>
                         <p className={styles.lede}>
-                            I'm a Data Scientist and 2nd year DPhil student researching how to make an equitable transition to a future of work shaped by AI and other emerging technologies. Please reach out if you're interested in technology, labor power, and equitable policy design.
+                            I research how we can an equitably transition to a future of work shaped by AI and other emerging technologies. Let's connect if you're interested in technology, labor, and equitable policy.
                         </p>
                         <div className={styles.ctaRow}>
                             <a href="https://matthewbbone.substack.com/" target="_blank" rel="noreferrer">
