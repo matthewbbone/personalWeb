@@ -107,7 +107,7 @@ export const App = () => {
                         <p className={styles.eyebrow}>2nd-year DPhil at the Oxford Internet Institute</p>
                         <h1>Technology, Labor, and Policy Design</h1>
                         <p className={styles.lede}>
-                            I research how we can an equitably transition to a future of work shaped by AI and other emerging technologies.
+                            I research how we can achieve an equitable transition to a future of work shaped by AI and other emerging technologies.
                         </p>
                         <div className={styles.ctaRow}>
                             <a href="https://matthewbbone.substack.com/" target="_blank" rel="noreferrer">
