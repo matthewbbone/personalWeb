@@ -104,10 +104,10 @@ export const App = () => {
 
                 <section className={styles.hero} id="top">
                     <div className={styles.heroCopy}>
-                        <p className={styles.eyebrow}>Social data scientist at the Oxford Internet Institute</p>
-                        <h1>Technology, Work, and Complex Social Dynamics</h1>
+                        <p className={styles.eyebrow}>2nd-year DPhil at the Oxford Internet Institute</p>
+                        <h1>Technology, Labor, and Policy Design</h1>
                         <p className={styles.lede}>
-                            I research how we can an equitably transition to a future of work shaped by AI and other emerging technologies. Let's connect if you're interested in technology, labor, and equitable policy.
+                            I research how we can an equitably transition to a future of work shaped by AI and other emerging technologies.
                         </p>
                         <div className={styles.ctaRow}>
                             <a href="https://matthewbbone.substack.com/" target="_blank" rel="noreferrer">
