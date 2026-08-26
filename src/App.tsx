@@ -55,6 +55,12 @@ const methodologicalHighlights = [
 
 const publishedArticles = [
     {
+        title: 'Monocultural Biases: Correlated biases in large language models lead to unequal systemic exclusion rates in hiring',
+        collaborators: 'with Fabian Stephany and Maria del Rio-Chanona',
+        status: 'Published in Proceedings of the Conference on Machine Learning (COLM), 2026',
+        summary: 'This paper studies the systemic risks of using large language models in hiring. It audits ten base and post-trained model families with realistic vacancy-applicant prompts, finding that post-training can improve models\' use of human-capital signals while also making decisions more correlated, increasing systemic exclusion and introducing a consistent penalty against older applicants.',
+    },
+    {
         title: 'Skills or degree? The rise of skill-based hiring for AI and green jobs',
         collaborators: 'with Eugenia González Ehlinger and Fabian Stephany',
         status: 'Published in Technological Forecasting and Social Change, 2025',
@@ -65,7 +71,7 @@ const publishedArticles = [
         collaborators: 'with Sung Soo Lim',
         status: 'Published in Journal of Behavioral and Experimental Economics, 2022',
         summary: 'Using Indonesian Family Life Survey data from 2007 and 2014, this paper studies how optimism shapes debt accumulation and household business growth. It finds that optimism is positively associated with debt growth in farm business households, where borrowing can raise expectations without sufficient profit growth, while optimistic nonfarm household heads are more likely to leverage debt toward income-generating activity.',
-    },
+    }
 ];
 
 const workingPapers = [
@@ -80,12 +86,6 @@ const workingPapers = [
         collaborators: 'with Prashant Garg, Chenxi Li, and Zachary Parolin',
         status: 'Working paper',
         summary: 'This project develops a pipeline for turning archival collective bargaining agreements into structured measures of worker protections. It uses OCR, provision classification, summarization, and ELO-style LLM comparisons to score contract generosity across categories such as compensation, healthcare, leave, safety, and dispute resolution, moving beyond a simple union/non-union indicator.',
-    },
-    {
-        title: 'Monocultural Biases: Correlated biases in large language models lead to unequal systemic exclusion rates in hiring',
-        collaborators: 'with Fabian Stephany and Maria del Rio-Chanona',
-        status: 'Working paper',
-        summary: 'This paper studies the systemic risks of using large language models in hiring. It audits ten base and post-trained model families with realistic vacancy-applicant prompts, finding that post-training can improve models\' use of human-capital signals while also making decisions more correlated, increasing systemic exclusion and introducing a consistent penalty against older applicants.',
     },
 ];
 
