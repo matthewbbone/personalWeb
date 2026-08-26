@@ -376,11 +376,19 @@
   padding: 0 32px 20px 0;
 }
 
+.paperStatusRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+
 .storySection .paperDetails p {
   margin: 0;
 }
 
-.storySection .paperDetails p + p {
+.storySection .paperStatusRow + p {
   margin-top: 8px;
 }
 
@@ -391,6 +399,21 @@
   line-height: 1.45;
   text-align: left;
   text-transform: uppercase;
+}
+
+.paperLink {
+  flex: none;
+  color: rgba(190, 12, 12, 0.95);
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.paperLink:hover,
+.paperLink:focus-visible {
+  color: #790b0b;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .storySection .methodsList {

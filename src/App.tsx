@@ -58,18 +58,21 @@ const publishedArticles = [
         title: 'Monocultural Biases: Correlated biases in large language models lead to unequal systemic exclusion rates in hiring',
         collaborators: 'with Fabian Stephany and Maria del Rio-Chanona',
         status: 'Published in Proceedings of the Conference on Machine Learning (COLM), 2026',
+        url: 'https://openreview.net/pdf?id=Hq5j8OLDZQ',
         summary: 'This paper studies the systemic risks of using large language models in hiring. It audits ten base and post-trained model families with realistic vacancy-applicant prompts, finding that post-training can improve models\' use of human-capital signals while also making decisions more correlated, increasing systemic exclusion and introducing a consistent penalty against older applicants.',
     },
     {
         title: 'Skills or degree? The rise of skill-based hiring for AI and green jobs',
         collaborators: 'with Eugenia González Ehlinger and Fabian Stephany',
         status: 'Published in Technological Forecasting and Social Change, 2025',
+        url: 'https://www.sciencedirect.com/science/article/pii/S0040162525000733',
         summary: 'Using around eleven million UK online job vacancies from 2018 to mid-2024, this paper studies skill-based hiring for AI and green jobs. It shows that demand for AI and green skills is rising, AI roles are becoming less tied to degree requirements, and AI skills command large wage premiums relative to formal credentials.',
     },
     {
         title: 'Optimism, debt accumulation, and business growth',
         collaborators: 'with Sung Soo Lim',
         status: 'Published in Journal of Behavioral and Experimental Economics, 2022',
+        url: 'https://www.sciencedirect.com/science/article/abs/pii/S2214804322000040',
         summary: 'Using Indonesian Family Life Survey data from 2007 and 2014, this paper studies how optimism shapes debt accumulation and household business growth. It finds that optimism is positively associated with debt growth in farm business households, where borrowing can raise expectations without sufficient profit growth, while optimistic nonfarm household heads are more likely to leverage debt toward income-generating activity.',
     }
 ];
@@ -79,12 +82,14 @@ const workingPapers = [
         title: 'Beyond pay: AI skills reward more job benefits',
         collaborators: 'with Alejandra Castaneda Mira and Fabian Stephany',
         status: 'Working paper',
+        url: 'https://arxiv.org/pdf/2507.20410',
         summary: 'Using roughly ten million U.S. online job vacancies from 2018 to 2024, this paper asks whether demand for AI skills is rewarded through non-monetary benefits as well as wages. It finds that AI roles are more likely to offer perks such as parental leave, workplace culture benefits, health and well-being support, and remote work, with high-paying AI roles often bundling salary premiums and expanded benefits together.',
     },
     {
         title: 'Measuring Generosity in Collective Bargaining Agreements with LLMs',
         collaborators: 'with Prashant Garg, Chenxi Li, and Zachary Parolin',
-        status: 'Working paper',
+        status: 'Forthcoming',
+        url: null,
         summary: 'This project develops a pipeline for turning archival collective bargaining agreements into structured measures of worker protections. It uses OCR, provision classification, summarization, and ELO-style LLM comparisons to score contract generosity across categories such as compensation, healthcare, leave, safety, and dispute resolution, moving beyond a simple union/non-union indicator.',
     },
 ];
@@ -160,7 +165,20 @@ export const App = () => {
                                             <span className={styles.paperArrow} aria-hidden="true" />
                                         </summary>
                                         <div className={styles.paperDetails}>
-                                            <p className={styles.paperStatus}>{paper.status}</p>
+                                            <div className={styles.paperStatusRow}>
+                                                <p className={styles.paperStatus}>{paper.status}</p>
+                                                {paper.url && (
+                                                    <a
+                                                        className={styles.paperLink}
+                                                        href={paper.url}
+                                                        target="_blank"
+                                                        rel="noreferrer"
+                                                        aria-label={`Read ${paper.title}`}
+                                                    >
+                                                        Read paper <span aria-hidden="true">↗</span>
+                                                    </a>
+                                                )}
+                                            </div>
                                             <p>{paper.summary}</p>
                                         </div>
                                     </details>
@@ -179,7 +197,18 @@ export const App = () => {
                                             <span className={styles.paperArrow} aria-hidden="true" />
                                         </summary>
                                         <div className={styles.paperDetails}>
-                                            <p className={styles.paperStatus}>{paper.status}</p>
+                                            <div className={styles.paperStatusRow}>
+                                                <p className={styles.paperStatus}>{paper.status}</p>
+                                                <a
+                                                    className={styles.paperLink}
+                                                    href={paper.url}
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                    aria-label={`Read ${paper.title}`}
+                                                >
+                                                    Read paper <span aria-hidden="true">↗</span>
+                                                </a>
+                                            </div>
                                             <p>{paper.summary}</p>
                                         </div>
                                     </details>
