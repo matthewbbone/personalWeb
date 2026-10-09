@@ -58,7 +58,7 @@ const publishedArticles = [
         title: 'Monocultural Biases: Correlated biases in large language models lead to unequal systemic exclusion rates in hiring',
         collaborators: 'with Fabian Stephany and Maria del Rio-Chanona',
         status: 'Published in Proceedings of the Conference on Machine Learning (COLM), 2026',
-        url: 'https://openreview.net/pdf?id=Hq5j8OLDZQ',
+        url: 'https://arxiv.org/pdf/2609.22169',
         summary: 'This paper studies the systemic risks of using large language models in hiring. It audits ten base and post-trained model families with realistic vacancy-applicant prompts, finding that post-training can improve models\' use of human-capital signals while also making decisions more correlated, increasing systemic exclusion and introducing a consistent penalty against older applicants.',
     },
     {
